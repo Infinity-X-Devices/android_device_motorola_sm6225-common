@@ -103,6 +103,9 @@ dalvik.vm.heaptargetutilization=0.75
 dalvik.vm.heapminfree=1m
 dalvik.vm.heapmaxfree=8m
 
+# Dex
+pm.dexopt.shared=quicken
+
 # Display
 debug.sf.enable_hwc_vds=1
 debug.sf.high_fps_early_gl_phase_offset_ns=-5000000
