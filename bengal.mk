@@ -296,7 +296,7 @@ PRODUCT_PACKAGES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-infinity
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -473,3 +473,14 @@ PRODUCT_COPY_FILES += \
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/sm6225-common/sm6225-common-vendor.mk)
+
+# Infinity Flags
+INFINITY_BUILD_TYPE := OFFICIAL
+INFINITY_MAINTAINER := DelightReza
+TARGET_SUPPORTS_BLUR := true
+TARGET_BUILD_GOOGLE_TELEPHONY := true
+TARGET_BUILD_VIMUSIC := true
+USE_MOTO_CALCULATOR := true
+
+BOARD_PRODUCTIMAGE_MINIMAL_PARTITION_RESERVED_SIZE := true
+WITH_GAPPS := true
